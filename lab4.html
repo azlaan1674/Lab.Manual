@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Demonstration</title>
+
+    <style>
+        body{
+            background-color:#eef6ff;
+            font-family: Verdana, sans-serif;
+            margin:20px;
+        }
+
+        h1{
+            text-align:center;
+            color:#0d47a1;
+        }
+
+        .internal-section{
+            background-color:#fff3cd;
+            border-left:6px solid #ff9800;
+            padding:15px;
+            margin:20px 0;
+            border-radius:5px;
+        }
+
+        .internal-section h2{
+            color:#8a4b08;
+            margin-top:0;
+        }
+
+        hr{
+            margin:25px 0;
+        }
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>CSS Styling Techniques</h1>
+
+    <!-- Inline CSS Example -->
+    <div style="background-color:#d4edda; color:#155724; padding:15px; border-radius:5px;">
+        <h2>Inline CSS</h2>
+        <p>
+            This section uses inline styling. The CSS properties are written directly
+            inside the HTML tag and affect only this specific element.
+        </p>
+    </div>
+
+    <hr>
+
+    <!-- Internal CSS Example -->
+    <div class="internal-section">
+        <h2>Internal CSS</h2>
+        <p>
+            Internal CSS is defined within the style tag in the head section.
+            It helps maintain consistent formatting across multiple elements
+            on the same webpage.
+        </p>
+    </div>
+
+    <hr>
+
+    <!-- External CSS Example -->
+    <div class="external-section">
+        <h2>External CSS</h2>
+        <p>
+            External CSS is stored in a separate file and linked to the webpage.
+            This approach improves maintainability and allows one stylesheet to
+            control the appearance of multiple pages.
+        </p>
+    </div>
+
+</body>
+</html>
